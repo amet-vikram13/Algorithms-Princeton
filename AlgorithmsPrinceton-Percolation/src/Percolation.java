@@ -1,4 +1,3 @@
-import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation
@@ -171,19 +170,6 @@ public class Percolation
     // unit testing (required)
     public static void main(String[] args)
     {
-        In in = new In(args[0]);
-        int N = in.readInt();
-        Percolation perc = new Percolation(N);
-        int count = 0;
-        while(!in.isEmpty())
-        {
-            int row = in.readInt();
-            int col = in.readInt();
-            perc.open(row,col);
-            count++;
-            System.out.println(count+". "+perc.percolates());
-        }
-        /*
         Percolation perc = new Percolation(5);
         perc.open(0,0);
         System.out.println(perc.isOpen(0,0));
@@ -196,7 +182,6 @@ public class Percolation
         System.out.println(perc.percolates());
         perc.open(4,0);
         System.out.println(perc.percolates());
-        */
 
     }
 
