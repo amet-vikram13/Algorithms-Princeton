@@ -48,9 +48,8 @@ public class PercolationStats
     // test client (see below)
     public static void main(String[] args)
     {
-        //int N = Integer.parseInt(args[0]);
-        //int T = Integer.parseInt(args[1]);
-        int N = 20; int T = 2000;
+        int N = Integer.parseInt(args[0]);
+        int T = Integer.parseInt(args[1]);
         if(N<=0 || T<=0)
             throw new IllegalArgumentException("Both N and T should be positive");
 
