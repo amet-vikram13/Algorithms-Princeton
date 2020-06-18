@@ -136,9 +136,9 @@ class Trie
 				// POINTING to LAST character of the
 				// word we makes it value -1 as this word
 				// is no longer part of Trie obj
-				if (root->next[c]!=NULL)
+				if (x->next[c]!=NULL)
 				{
-					if (root->next[c]->value != -1)
+					if (x->next[c]->value != -1)
 					{
 						x->next[c]->value = -1;
 						// x->next[c] node is now checked whether it can be deleted
