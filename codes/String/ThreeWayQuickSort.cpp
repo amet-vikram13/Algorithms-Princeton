@@ -42,7 +42,13 @@ class ThreeWayQuickSort
 		int charAtd(string str,int d)
 		{
 			if (d < str.size()) return (int(str[d])-int('a')+1);
-			else return -1;
+			else return -1; // VIP concept here
+			/*
+			It makes sure that for strings whose length we have traversed
+			always comes at top i.e shorter strings will always come 
+			first in case of equal prefix matching
+			*/
+
 		}
 
 		void exch(int i,int j)
