@@ -243,8 +243,6 @@ public class BinarySearchTree<Key extends Comparable<Key>,Value> implements Iter
 		else           return x; 
 	}
 	
-
-
 	// Height of Tree from bottom till root
 	public int height()
 	{	
