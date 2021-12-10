@@ -17,7 +17,7 @@ public class BellmanFordQueuebased
 			for(DirectedEdge e : G.adj(v))
 			{
 				w = e.to();
-				if (distTo[w]!=Integer.MAX_VALUE && distTo[v]+e.weight() < distTo[w])
+				if (distTo[v]!=Double.POSITIVE_INFINITY && distTo[v]+e.weight()<distTo[w])
 				{
 					hasNegativeCycle = true;
 					break;
@@ -33,7 +33,7 @@ public class BellmanFordQueuebased
 		{
 			w = e.to();
 
-			if (distTo[w] > distTo[v] + e.weight())
+			if (distTo[v]!=Double.POSITIVE_INFINITY && distTo[w]>distTo[v]+e.weight())
 			{
 				distTo[w] = distTo[v] + e.weight();
 				edgeTo[w] = e;
